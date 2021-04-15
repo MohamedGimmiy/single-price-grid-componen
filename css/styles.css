@@ -1,0 +1,82 @@
+body{
+    background-color: hsl(204, 43%, 93%);
+    display: flex;
+    min-height: 100vh;
+}
+
+header{
+    margin: 0px auto;
+}
+.container{
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    width: 50vw;
+    flex-direction: column;
+}
+
+.first{
+    background-color: white;
+    padding: 40px 30px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.first h5{
+    color: hsl(179, 62%, 43%);
+}
+.first p {
+    color: hsl(218, 22%, 67%);
+}
+.first p>span{
+    color: hsl(71, 73%, 54%);
+}
+
+.second>.col-md-6{
+    background-color: hsl(179, 62%, 60%);
+    padding: 40px 30px;
+    border-bottom-right-radius: 10px;
+    color: white;
+    font-weight: 200;
+}
+.second>.col-md-6:first-child{
+    color: white;
+    background-color: hsl(179, 62%, 43%);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 0px;
+    font-weight: 400;
+}
+.second>.col-md-6>h4>span{
+    color: hsl(204, 43%, 93%);
+    font-weight: 100;
+    font-size: 15px;
+    display: inline;
+}
+span{
+    display: block;
+    margin-bottom: 10px;
+}
+.second h5{
+    font-size: 18px;
+}
+button{
+    font-size: 15px !important;
+    background-color: hsl(71, 73%, 54%) !important;
+}
+
+@media screen  and (max-width:800px){
+    .second>.col-md-6{
+        background-color: hsl(179, 62%, 60%);
+        padding: 40px 30px;
+        border-bottom-right-radius: 0px;
+        color: white;
+        font-weight: 200;
+    }
+    .second>.col-md-6:first-child{
+        color: white;
+        background-color: hsl(179, 62%, 43%);
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+}
